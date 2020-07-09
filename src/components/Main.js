@@ -27,7 +27,7 @@ class Main extends Component {
       <Router>
         <React.Fragment>
           <NavBar />
-          <Switch />
+          <Switch>
           {/* Always use exact or "/"" would inpact not only "/" but all the others with a "/" in them like /about */}
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
@@ -41,7 +41,7 @@ class Main extends Component {
           <Route exact path="/history" component={History} />
           {/* Thanks to Switch we will get a 404 for a page not in our list, ORDERING is very important, 404 page must go LAST */}
           <Route component={ErrorPage} />
-          <Switch/>
+          </Switch>
         </React.Fragment>
       </Router>
     );
