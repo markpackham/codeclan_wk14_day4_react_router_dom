@@ -3,6 +3,7 @@ import About from "./About";
 import Home from "./Home";
 import Pricing from "./Pricing";
 import Contact from "./Contact";
+import History from "./History";
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import NavBar from './NavBar';
 
@@ -18,6 +19,7 @@ class Main extends Component {
 <Route exact path="/about" component={About} />
 <Route exact path="/pricing" component={Pricing} />
 <Route exact path="/contact" component={Contact} />
+<Route exact path="/history" component={History} />
 </React.Fragment>
 </Router>
     );
